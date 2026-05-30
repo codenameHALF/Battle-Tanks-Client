@@ -1,0 +1,25 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://bnjpqo1btv4mp"
+path="res://.godot/imported/small_heading.png-74e6c799cb2d3cfad9b6668d366a08fe.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/small_heading.png"
+dest_files=["res://.godot/imported/small_heading.png-74e6c799cb2d3cfad9b6668d366a08fe.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray("\'A\'-\'Z\'", "\'a\'-\'z\'", "\'.\'", "\'-\'")
+kerning_pairs=PackedStringArray()
+columns=26
+rows=3
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+ascent=0
+descent=0
+fallbacks=[]
+compress=true
+scaling_mode=2

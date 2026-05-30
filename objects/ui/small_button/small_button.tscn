@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c6a4r0dicjnd3"]
+
+[ext_resource type="Theme" uid="uid://bmyy3sqxq1jww" path="res://objects/ui/small_button/small_button.tres" id="1_egg5e"]
+[ext_resource type="Script" uid="uid://bbuua6dqot1la" path="res://objects/ui/small_button/small_button.gd" id="2_fpqy5"]
+
+[node name="SmallButton" type="Button" unique_id=941088435]
+offset_right = 448.0
+offset_bottom = 128.0
+theme = ExtResource("1_egg5e")
+script = ExtResource("2_fpqy5")
+
+[node name="Label" type="Label" parent="." unique_id=1335257773]
+layout_mode = 0
+offset_right = 448.0
+offset_bottom = 128.0
+theme = ExtResource("1_egg5e")
+text = "OK"
+horizontal_alignment = 1
+vertical_alignment = 1

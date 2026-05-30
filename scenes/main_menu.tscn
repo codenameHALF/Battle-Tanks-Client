@@ -1,0 +1,889 @@
+[gd_scene format=3 uid="uid://dxq4uv8vmrqei"]
+
+[ext_resource type="Script" uid="uid://cyaif0qqhm0pb" path="res://scenes/main_menu.gd" id="1_5dd4i"]
+[ext_resource type="Shader" uid="uid://cn8c2ltd7cyho" path="res://scroll.gdshader" id="1_8ln24"]
+[ext_resource type="Texture2D" uid="uid://b50dhjj712w0l" path="res://assets/texture/ui/logo.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://whip606sxntx" path="res://assets/texture/ui/decals.png" id="1_wu84c"]
+[ext_resource type="Texture2D" uid="uid://fq25xxp3b8kv" path="res://assets/texture/game/tanks/tank_green.png" id="2_oa1go"]
+[ext_resource type="Script" uid="uid://bfnkiuoepcft4" path="res://scripts/ui/ui_animateable_control.gd" id="6_8egab"]
+[ext_resource type="ArrayMesh" uid="uid://yw5glro4u1p8" path="res://assets/models/tank.obj" id="6_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://bynn0fybeuf7w" path="res://assets/texture/ui/credit_text.png" id="6_tbmy8"]
+[ext_resource type="PackedScene" uid="uid://dshjabp7f6shl" path="res://objects/ui/side_button/side_button.tscn" id="7_oa1go"]
+[ext_resource type="Texture2D" uid="uid://xuakbotdsa1m" path="res://assets/texture/ui/play_icon.png" id="8_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://c0f0cxr5qcvro" path="res://assets/texture/ui/options_icon.png" id="9_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://d0e241wpdyymx" path="res://assets/texture/ui/username_header.png" id="11_flqon"]
+[ext_resource type="PackedScene" uid="uid://c6a4r0dicjnd3" path="res://objects/ui/small_button/small_button.tscn" id="12_1ajci"]
+[ext_resource type="Texture2D" uid="uid://vxm5higwsbot" path="res://assets/texture/ui/back_button.png" id="12_rcqid"]
+[ext_resource type="Texture2D" uid="uid://cabhigbomkyee" path="res://assets/texture/ui/username_field.png" id="13_1ajci"]
+[ext_resource type="FontFile" uid="uid://o60y7h6cusrs" path="res://assets/fonts/header_font.png" id="14_7b55j"]
+[ext_resource type="Texture2D" uid="uid://cm3igkiwvdwvf" path="res://assets/texture/ui/select_fullscreen_header.png" id="17_6vcge"]
+[ext_resource type="Texture2D" uid="uid://bqo2gedjvlfjd" path="res://assets/texture/ui/lobbies_header.png" id="17_hstxw"]
+[ext_resource type="Script" uid="uid://cgycffsfrn3wh" path="res://scripts/ui/ui_animation_controller.gd" id="18_8egab"]
+[ext_resource type="Script" uid="uid://dfjgsqf5s0i58" path="res://scenes/back_button.gd" id="18_a8gd2"]
+[ext_resource type="Texture2D" uid="uid://cr233ydda5ux3" path="res://assets/texture/ui/lobbies_background.png" id="18_gw5y6"]
+[ext_resource type="Texture2D" uid="uid://ddy7cfbquw74t" path="res://assets/texture/ui/windowed_button.png" id="18_ip0br"]
+[ext_resource type="Texture2D" uid="uid://duuqnravm7568" path="res://assets/texture/ui/windowed_button_highlight.png" id="18_xyero"]
+[ext_resource type="PackedScene" uid="uid://dih2ymkmj0u1q" path="res://objects/ui/lobbies_title_button/lobby_title_button.tscn" id="19_gw5y6"]
+[ext_resource type="Texture2D" uid="uid://dm800la480kdo" path="res://assets/texture/ui/fullscreen_button.png" id="19_xyero"]
+[ext_resource type="Texture2D" uid="uid://dq3sdu7h6ssm2" path="res://assets/texture/ui/lobbies_up_button_highlight.png" id="20_3wgol"]
+[ext_resource type="Texture2D" uid="uid://chaafyovsg3ik" path="res://assets/texture/ui/fullscreen_button_highlight.png" id="20_tcusk"]
+[ext_resource type="Texture2D" uid="uid://dyhil0oyw1w3l" path="res://assets/texture/ui/lobbies_up_button.png" id="21_1acrt"]
+[ext_resource type="Texture2D" uid="uid://dkwqxxsw1fiyt" path="res://assets/texture/ui/lobbies_down_button_highlight.png" id="22_vr8o3"]
+[ext_resource type="Texture2D" uid="uid://dr3coywqpt6d7" path="res://assets/texture/ui/lobbies_down_button.png" id="23_1a85y"]
+[ext_resource type="Texture2D" uid="uid://q0bx060dsiwb" path="res://assets/texture/ui/lobbies_create_button_highlight.png" id="24_vr8o3"]
+[ext_resource type="Texture2D" uid="uid://xaduiu2cjbmr" path="res://assets/texture/ui/lobbies_create_button.png" id="25_1a85y"]
+[ext_resource type="Texture2D" uid="uid://k0yy4wnolwxm" path="res://assets/texture/ui/lobby_players_background.png" id="26_engjn"]
+[ext_resource type="Texture2D" uid="uid://dk7my2oylojak" path="res://assets/texture/ui/lobby_info_background.png" id="27_6h3lr"]
+[ext_resource type="PackedScene" uid="uid://dbyjqu42qtrlk" path="res://objects/ui/tank_select_button/tank_select_button.tscn" id="33_tcusk"]
+[ext_resource type="Texture2D" uid="uid://csof802yqriwg" path="res://assets/texture/ui/tank_select_header.png" id="34_4puye"]
+[ext_resource type="Texture2D" uid="uid://dpj70m4mkl060" path="res://assets/texture/game/tanks/tank_blue.png" id="35_4puye"]
+[ext_resource type="Script" uid="uid://dol0py10j17yw" path="res://scripts/passives/spin.gd" id="36_q13xq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jk1qb"]
+shading_mode = 0
+albedo_texture = ExtResource("2_oa1go")
+texture_filter = 0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rtw2f"]
+shader = ExtResource("1_8ln24")
+shader_parameter/speed = 0.05
+
+[sub_resource type="Environment" id="Environment_tbmy8"]
+ambient_light_source = 3
+reflected_light_source = 2
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8egab"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hstxw"]
+
+[sub_resource type="Theme" id="Theme_8egab"]
+LineEdit/constants/caret_width = 16
+LineEdit/constants/minimum_character_width = 0
+LineEdit/font_sizes/font_size = 80
+LineEdit/fonts/font = ExtResource("14_7b55j")
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_8egab")
+LineEdit/styles/normal = SubResource("StyleBoxEmpty_hstxw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eku7s"]
+texture = ExtResource("18_xyero")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c6nra"]
+texture = ExtResource("18_xyero")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yxnar"]
+texture = ExtResource("18_ip0br")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1468l"]
+texture = ExtResource("18_ip0br")
+
+[sub_resource type="Theme" id="Theme_eku7s"]
+Button/styles/focus = SubResource("StyleBoxTexture_eku7s")
+Button/styles/hover = SubResource("StyleBoxTexture_c6nra")
+Button/styles/normal = SubResource("StyleBoxTexture_yxnar")
+Button/styles/pressed = SubResource("StyleBoxTexture_1468l")
+
+[sub_resource type="Theme" id="Theme_c6nra"]
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("14_7b55j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_01xyg"]
+texture = ExtResource("20_tcusk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_764ux"]
+texture = ExtResource("20_tcusk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qw82i"]
+texture = ExtResource("19_xyero")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wadof"]
+texture = ExtResource("19_xyero")
+
+[sub_resource type="Theme" id="Theme_1468l"]
+Button/styles/focus = SubResource("StyleBoxTexture_01xyg")
+Button/styles/hover = SubResource("StyleBoxTexture_764ux")
+Button/styles/normal = SubResource("StyleBoxTexture_qw82i")
+Button/styles/pressed = SubResource("StyleBoxTexture_wadof")
+
+[sub_resource type="Theme" id="Theme_01xyg"]
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("14_7b55j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hl5e0"]
+texture = ExtResource("20_3wgol")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_engjn"]
+texture = ExtResource("20_3wgol")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6h3lr"]
+texture = ExtResource("21_1acrt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dj67d"]
+texture = ExtResource("21_1acrt")
+
+[sub_resource type="Theme" id="Theme_6vcge"]
+Button/styles/focus = SubResource("StyleBoxTexture_hl5e0")
+Button/styles/hover = SubResource("StyleBoxTexture_engjn")
+Button/styles/normal = SubResource("StyleBoxTexture_6h3lr")
+Button/styles/pressed = SubResource("StyleBoxTexture_dj67d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ip0br"]
+texture = ExtResource("22_vr8o3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xyero"]
+texture = ExtResource("22_vr8o3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tcusk"]
+texture = ExtResource("23_1a85y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4puye"]
+texture = ExtResource("23_1a85y")
+
+[sub_resource type="Theme" id="Theme_q13xq"]
+Button/styles/focus = SubResource("StyleBoxTexture_ip0br")
+Button/styles/hover = SubResource("StyleBoxTexture_xyero")
+Button/styles/normal = SubResource("StyleBoxTexture_tcusk")
+Button/styles/pressed = SubResource("StyleBoxTexture_4puye")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6vcge"]
+texture = ExtResource("24_vr8o3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q13xq"]
+texture = ExtResource("24_vr8o3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u43bj"]
+texture = ExtResource("25_1a85y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jvjdd"]
+texture = ExtResource("25_1a85y")
+
+[sub_resource type="Theme" id="Theme_yxnar"]
+Button/styles/focus = SubResource("StyleBoxTexture_6vcge")
+Button/styles/hover = SubResource("StyleBoxTexture_q13xq")
+Button/styles/normal = SubResource("StyleBoxTexture_u43bj")
+Button/styles/pressed = SubResource("StyleBoxTexture_jvjdd")
+
+[sub_resource type="Theme" id="Theme_vr8o3"]
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("14_7b55j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q13xq"]
+shading_mode = 0
+albedo_texture = ExtResource("35_4puye")
+texture_filter = 0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ajci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7b55j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5pajh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j7ex8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a8gd2"]
+
+[sub_resource type="Theme" id="Theme_hstxw"]
+Button/styles/disabled = SubResource("StyleBoxEmpty_1ajci")
+Button/styles/focus = SubResource("StyleBoxEmpty_7b55j")
+Button/styles/hover = SubResource("StyleBoxEmpty_5pajh")
+Button/styles/normal = SubResource("StyleBoxEmpty_j7ex8")
+Button/styles/pressed = SubResource("StyleBoxEmpty_a8gd2")
+
+[node name="MainMenu" type="Control" unique_id=1252046055]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_5dd4i")
+
+[node name="Tank" type="MeshInstance3D" parent="." unique_id=1614518156]
+transform = Transform3D(0.86055535, 0, -0.50935686, 0, 1, 0, 0.50935686, 0, 0.86055535, -0.19069529, 0, 0)
+mesh = ExtResource("6_rtw2f")
+surface_material_override/0 = SubResource("StandardMaterial3D_jk1qb")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1856684075]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.72156864, 0.4745098, 1)
+
+[node name="Decals" type="TextureRect" parent="." unique_id=139034521]
+modulate = Color(1, 1, 1, 0.49803922)
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_rtw2f")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wu84c")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TitleScreen" type="Control" parent="." unique_id=2052550596]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("18_8egab")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TitleScreen" unique_id=201039348]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 212.0
+offset_top = 184.0
+offset_right = -898.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(212, 184)
+out_pos = Vector2(-856, 184)
+
+[node name="SubViewport" type="SubViewport" parent="TitleScreen/SubViewportContainer" unique_id=1728075083]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(800, 600)
+render_target_update_mode = 0
+
+[node name="Camera3D" type="Camera3D" parent="TitleScreen/SubViewportContainer/SubViewport" unique_id=1364448212]
+transform = Transform3D(1, 0, 0, 0, 0.9517498, 0.30687493, 0, -0.30687493, 0.9517498, 0.0072062016, 1.0888562, 2.4992175)
+cull_mask = 1
+environment = SubResource("Environment_tbmy8")
+current = true
+fov = 37.8
+size = 2.87
+near = 0.042
+
+[node name="Logo" type="TextureRect" parent="TitleScreen" unique_id=470485845]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 176.0
+offset_top = -548.0
+offset_right = 948.0002
+offset_bottom = -228.0
+grow_vertical = 0
+texture = ExtResource("1_ekxnf")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(176, 532)
+out_pos = Vector2(-836, 532)
+
+[node name="CreditText" type="TextureRect" parent="TitleScreen" unique_id=1624042086]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1288.0
+offset_top = 1000.0
+offset_right = 1848.0029
+offset_bottom = 1040.0
+texture = ExtResource("6_tbmy8")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1288, 1000)
+out_pos = Vector2(2056, 1000)
+
+[node name="PlayButtonContainer" type="Control" parent="TitleScreen" unique_id=286396526]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -704.0
+offset_top = -156.0
+offset_right = 64.0
+offset_bottom = -28.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1216, 384)
+out_pos = Vector2(1984, 384)
+highlight_pos = Vector2(1152, 384)
+
+[node name="PlayButton" parent="TitleScreen/PlayButtonContainer" unique_id=1346856500 instance=ExtResource("7_oa1go")]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+set_text = "PLAY"
+set_icon = ExtResource("8_jk1qb")
+metadata/_edit_lock_ = true
+
+[node name="OptionsButtonContainer" type="Control" parent="TitleScreen" unique_id=1821537032]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -704.0
+offset_top = 36.0
+offset_right = 64.0
+offset_bottom = 164.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1216, 576)
+out_pos = Vector2(1984, 576)
+highlight_pos = Vector2(1152, 576)
+
+[node name="OptionsButton" parent="TitleScreen/OptionsButtonContainer" unique_id=1076672624 instance=ExtResource("7_oa1go")]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+set_text = "OPTIONS"
+set_icon = ExtResource("9_5dd4i")
+metadata/_edit_lock_ = true
+
+[node name="UsernameScreen" type="Control" parent="." unique_id=1744418533]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("18_8egab")
+
+[node name="Header" type="TextureRect" parent="UsernameScreen" unique_id=338840046]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 352.0
+texture = ExtResource("11_flqon")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+out_pos = Vector2(0, -416)
+
+[node name="UsernameField" type="TextureRect" parent="UsernameScreen" unique_id=1383273875]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 448.0
+offset_right = 1664.0
+offset_bottom = 704.0
+texture = ExtResource("13_1ajci")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(256, 448)
+out_pos = Vector2(-1472, 448)
+
+[node name="LineEdit" type="LineEdit" parent="UsernameScreen/UsernameField" unique_id=1955600950]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 84.0
+offset_right = 1340.0
+offset_bottom = 172.0
+theme = SubResource("Theme_8egab")
+placeholder_text = "USERNAME"
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="OkButtonContianer" type="Control" parent="UsernameScreen" unique_id=2083696854]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -704.0
+offset_top = -248.0
+offset_right = -256.0
+offset_bottom = -120.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1216, 832)
+out_pos = Vector2(-512, 832)
+highlight_pos = Vector2(1216, 800)
+
+[node name="OkButton" parent="UsernameScreen/OkButtonContianer" unique_id=941088435 instance=ExtResource("12_1ajci")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+set_text = "OK"
+metadata/_edit_lock_ = true
+
+[node name="SelectFullscreenScreen" type="Control" parent="." unique_id=1465699460]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("18_8egab")
+
+[node name="Header" type="TextureRect" parent="SelectFullscreenScreen" unique_id=445421582]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 352.0
+texture = ExtResource("17_6vcge")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+out_pos = Vector2(0, -416)
+
+[node name="WindowedButton" type="Button" parent="SelectFullscreenScreen" unique_id=69498283]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 416.0
+offset_right = 704.0
+offset_bottom = 736.0
+theme = SubResource("Theme_eku7s")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(384, 416)
+out_pos = Vector2(-576, 416)
+
+[node name="WindowedLabel" type="Label" parent="SelectFullscreenScreen/WindowedButton" unique_id=1800246731]
+layout_mode = 0
+offset_left = -132.0
+offset_top = 352.0
+offset_right = 444.0
+offset_bottom = 432.0
+theme = SubResource("Theme_c6nra")
+text = "WINDOWED"
+
+[node name="FullscreenButton" type="Button" parent="SelectFullscreenScreen" unique_id=709291191]
+layout_mode = 0
+offset_left = 1152.0
+offset_top = 416.0
+offset_right = 1472.0
+offset_bottom = 736.0
+theme = SubResource("Theme_1468l")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1152, 416)
+out_pos = Vector2(2176, 416)
+
+[node name="FullscreenLabel" type="Label" parent="SelectFullscreenScreen/FullscreenButton" unique_id=1622672549]
+layout_mode = 0
+offset_left = -232.0
+offset_top = 352.0
+offset_right = 488.0
+offset_bottom = 432.0
+theme = SubResource("Theme_01xyg")
+text = "Fullscreen"
+
+[node name="LobbiesScreen" type="Control" parent="." unique_id=575578618]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("18_8egab")
+
+[node name="Header" type="TextureRect" parent="LobbiesScreen" unique_id=1496242451]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 352.0
+texture = ExtResource("17_hstxw")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+out_pos = Vector2(0, -416)
+
+[node name="Background" type="TextureRect" parent="LobbiesScreen" unique_id=308044652]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 352.0
+offset_right = 1856.0
+offset_bottom = 992.0
+texture = ExtResource("18_gw5y6")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(64, 352)
+out_pos = Vector2(64, 1152)
+
+[node name="LobbyTitleButton1Container" type="Control" parent="LobbiesScreen/Background" unique_id=119214426]
+anchors_preset = 0
+offset_left = 264.0
+offset_top = 40.0
+offset_right = 1272.0
+offset_bottom = 152.0
+
+[node name="LobbyTitleButton1" parent="LobbiesScreen/Background/LobbyTitleButton1Container" unique_id=1976564998 instance=ExtResource("19_gw5y6")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+set_text = "VITA"
+metadata/_edit_lock_ = true
+
+[node name="LobbyTitleButton2Container" type="Control" parent="LobbiesScreen/Background" unique_id=1137264462]
+anchors_preset = 0
+offset_left = 264.0
+offset_top = 168.0
+offset_right = 1272.0
+offset_bottom = 280.0
+
+[node name="LobbyTitleButton2" parent="LobbiesScreen/Background/LobbyTitleButton2Container" unique_id=1294996827 instance=ExtResource("19_gw5y6")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+set_text = "LAUER"
+metadata/_edit_lock_ = true
+
+[node name="LobbyTitleButton3Container" type="Control" parent="LobbiesScreen/Background" unique_id=371980560]
+anchors_preset = 0
+offset_left = 264.0
+offset_top = 296.0
+offset_right = 1272.0
+offset_bottom = 408.0
+
+[node name="LobbyTitleButton3" parent="LobbiesScreen/Background/LobbyTitleButton3Container" unique_id=883898855 instance=ExtResource("19_gw5y6")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+set_text = "Halfdan"
+metadata/_edit_lock_ = true
+
+[node name="UpButton" type="Button" parent="LobbiesScreen/Background" unique_id=762937247]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 216.0
+offset_bottom = 216.0
+theme = SubResource("Theme_6vcge")
+
+[node name="DownButton" type="Button" parent="LobbiesScreen/Background" unique_id=1213249154]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 232.0
+offset_right = 216.0
+offset_bottom = 408.0
+theme = SubResource("Theme_q13xq")
+
+[node name="CreateLobbyButton" type="Button" parent="LobbiesScreen/Background" unique_id=1377482242]
+layout_mode = 0
+offset_left = 864.0
+offset_top = 480.0
+offset_right = 1760.0
+offset_bottom = 608.0
+theme = SubResource("Theme_yxnar")
+
+[node name="Label" type="Label" parent="LobbiesScreen/Background/CreateLobbyButton" unique_id=362359810]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_vr8o3")
+text = "NEW LOBBY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LobbyScreen" type="Control" parent="." unique_id=174583228]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("18_8egab")
+
+[node name="PlayerBackground" type="TextureRect" parent="LobbyScreen" unique_id=131046550]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 928.0
+offset_bottom = 832.0
+texture = ExtResource("26_engjn")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(64, 0)
+out_pos = Vector2(64, -896)
+
+[node name="InfoBackground" type="TextureRect" parent="LobbyScreen" unique_id=501171914]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 64.0
+offset_right = 1920.0
+offset_bottom = 832.0
+texture = ExtResource("27_6h3lr")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(992, 64)
+out_pos = Vector2(1984, 64)
+
+[node name="StartButtonContainer" type="Control" parent="LobbyScreen" unique_id=1569948519]
+anchors_preset = 0
+offset_left = 1408.0
+offset_top = 896.0
+offset_right = 1856.0
+offset_bottom = 1024.0
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1408, 896)
+out_pos = Vector2(1408, 1216)
+
+[node name="StartButton" parent="LobbyScreen/StartButtonContainer" unique_id=580501299 instance=ExtResource("12_1ajci")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+set_text = "START"
+metadata/_edit_lock_ = true
+
+[node name="TankSelectScreen" type="Control" parent="." unique_id=417445075]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("18_8egab")
+
+[node name="TankButtonsContainer" type="Control" parent="TankSelectScreen" unique_id=1710427652]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = -1472.0
+offset_bottom = -248.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(64, 64)
+out_pos = Vector2(-448, 64)
+
+[node name="TankSelectButton" parent="TankSelectScreen/TankButtonsContainer" unique_id=322242065 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton2" parent="TankSelectScreen/TankButtonsContainer" unique_id=402927336 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+offset_left = 192.0
+offset_right = 384.0
+skin = 1
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton3" parent="TankSelectScreen/TankButtonsContainer" unique_id=1996430818 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+offset_top = 192.0
+offset_bottom = 384.0
+skin = 2
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton4" parent="TankSelectScreen/TankButtonsContainer" unique_id=746899116 instance=ExtResource("33_tcusk")]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 384.0
+skin = 3
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton5" parent="TankSelectScreen/TankButtonsContainer" unique_id=610155409 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+offset_top = 384.0
+offset_bottom = 576.0
+skin = 4
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton6" parent="TankSelectScreen/TankButtonsContainer" unique_id=344550114 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+offset_left = 192.0
+offset_top = 384.0
+offset_right = 384.0
+offset_bottom = 576.0
+skin = 5
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton7" parent="TankSelectScreen/TankButtonsContainer" unique_id=1119760762 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+offset_top = 576.0
+offset_bottom = 768.0
+skin = 6
+metadata/_edit_lock_ = true
+
+[node name="TankSelectButton8" parent="TankSelectScreen/TankButtonsContainer" unique_id=1998243173 instance=ExtResource("33_tcusk")]
+layout_mode = 1
+offset_left = 192.0
+offset_top = 576.0
+offset_right = 384.0
+offset_bottom = 768.0
+skin = 7
+metadata/_edit_lock_ = true
+
+[node name="Header" type="TextureRect" parent="TankSelectScreen" unique_id=294971615]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 64.0
+offset_right = 1856.0
+offset_bottom = 208.0
+texture = ExtResource("34_4puye")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(512, 64)
+out_pos = Vector2(512, -208)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TankSelectScreen" unique_id=860227441]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 320.0
+offset_right = 1664.0
+offset_bottom = 832.0
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(640, 320)
+out_pos = Vector2(1984, 320)
+
+[node name="SubViewport" type="SubViewport" parent="TankSelectScreen/SubViewportContainer" unique_id=1883011440]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1024, 512)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="TankSelectScreen/SubViewportContainer/SubViewport" unique_id=360202870]
+transform = Transform3D(1, 0, 0, 0, 0.9643545, 0.26461372, 0, -0.26461372, 0.9643545, 0, 0.9920645, 2.0255837)
+cull_mask = 1048064
+projection = 1
+size = 1.8
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TankSelectScreen" unique_id=415167043]
+transform = Transform3D(0.53489804, 0, -0.8449166, 0, 1, 0, 0.8449166, 0, 0.53489804, 0, 0, 0)
+layers = 512
+mesh = ExtResource("6_rtw2f")
+surface_material_override/0 = SubResource("StandardMaterial3D_q13xq")
+script = ExtResource("36_q13xq")
+
+[node name="OkButtonContainer" type="Control" parent="TankSelectScreen" unique_id=1586891135]
+anchors_preset = 0
+offset_left = 1408.0
+offset_top = 896.0
+offset_right = 1856.0
+offset_bottom = 1024.0
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(1408, 896)
+out_pos = Vector2(1408, 1216)
+
+[node name="SmallButton" parent="TankSelectScreen/OkButtonContainer" unique_id=428704211 instance=ExtResource("12_1ajci")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+set_text = "OK"
+metadata/_edit_lock_ = true
+
+[node name="BackButtonScreen" type="Control" parent="." unique_id=36118833]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("18_8egab")
+metadata/_edit_lock_ = true
+
+[node name="BackButtonContainer" type="TextureRect" parent="BackButtonScreen" unique_id=852359725]
+layout_mode = 0
+offset_top = 896.0
+offset_right = 1920.0
+offset_bottom = 1152.0
+mouse_filter = 2
+texture = ExtResource("12_rcqid")
+script = ExtResource("6_8egab")
+parent_path = NodePath("..")
+in_pos = Vector2(0, 896)
+out_pos = Vector2(0, 1152)
+highlight_pos = Vector2(0, 860)
+metadata/_edit_lock_ = true
+
+[node name="BackButton" type="Button" parent="BackButtonScreen/BackButtonContainer" unique_id=7397346]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = -64.00049
+grow_vertical = 0
+theme = SubResource("Theme_hstxw")
+script = ExtResource("18_a8gd2")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="TitleScreen/PlayButtonContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="TitleScreen/OptionsButtonContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="UsernameScreen/OkButtonContianer/OkButton" to="." method="_on_ok_button_pressed"]
+[connection signal="pressed" from="SelectFullscreenScreen/WindowedButton" to="." method="_on_windowed_button_pressed"]
+[connection signal="pressed" from="SelectFullscreenScreen/FullscreenButton" to="." method="_on_fullscreen_button_pressed"]
+[connection signal="pressed" from="LobbiesScreen/Background/CreateLobbyButton" to="." method="_on_create_lobby_button_pressed"]
+[connection signal="pressed" from="LobbyScreen/StartButtonContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="BackButtonScreen/BackButtonContainer/BackButton" to="BackButtonScreen/BackButtonContainer/BackButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BackButtonScreen/BackButtonContainer/BackButton" to="BackButtonScreen/BackButtonContainer/BackButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="BackButtonScreen/BackButtonContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="BackButtonScreen/BackButtonContainer/BackButton" to="BackButtonScreen/BackButtonContainer/BackButton" method="_on_pressed"]

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="UIScreenTransition" format=3 uid="uid://d1sn7orf7thlf"]
+
+[ext_resource type="Script" uid="uid://ccew6r7xujpe1" path="res://scripts/ui/ui_screen_transition.gd" id="1_ysvu5"]
+[ext_resource type="Script" uid="uid://dnufh86al0n1t" path="res://scripts/ui/ui_animation_track.gd" id="2_5xbsx"]
+
+[sub_resource type="Resource" id="Resource_a8gd2"]
+script = ExtResource("2_5xbsx")
+target_path = NodePath("../TitleScreen/PlayButton")
+in_pos = Vector2(1216, 448)
+out_pos = Vector2(1952, 448)
+metadata/_custom_type_script = "uid://dnufh86al0n1t"
+
+[sub_resource type="Resource" id="Resource_hstxw"]
+script = ExtResource("2_5xbsx")
+target_path = NodePath("../TitleScreen/OptionsButton")
+in_pos = Vector2(1216, 640)
+out_pos = Vector2(1952, 640)
+metadata/_custom_type_script = "uid://dnufh86al0n1t"
+
+[sub_resource type="Resource" id="Resource_8egab"]
+script = ExtResource("2_5xbsx")
+target_path = NodePath("../TitleScreen/CreditText")
+in_pos = Vector2(1288, 1000)
+out_pos = Vector2(2024, 1000)
+metadata/_custom_type_script = "uid://dnufh86al0n1t"
+
+[sub_resource type="Resource" id="Resource_gw5y6"]
+script = ExtResource("2_5xbsx")
+target_path = NodePath("../TitleScreen/SubViewportContainer")
+in_pos = Vector2(212, 184)
+out_pos = Vector2(-860, 184)
+metadata/_custom_type_script = "uid://dnufh86al0n1t"
+
+[sub_resource type="Resource" id="Resource_svtp6"]
+script = ExtResource("2_5xbsx")
+target_path = NodePath("../TitleScreen/Logo")
+in_pos = Vector2(176, 532)
+out_pos = Vector2(-896, 532)
+metadata/_custom_type_script = "uid://dnufh86al0n1t"
+
+[resource]
+script = ExtResource("1_ysvu5")
+tracks = Array[ExtResource("2_5xbsx")]([SubResource("Resource_a8gd2"), SubResource("Resource_hstxw"), SubResource("Resource_8egab"), SubResource("Resource_gw5y6"), SubResource("Resource_svtp6")])
+metadata/_custom_type_script = "uid://ccew6r7xujpe1"

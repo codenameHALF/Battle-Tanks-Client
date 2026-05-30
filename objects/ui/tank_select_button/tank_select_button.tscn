@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dbyjqu42qtrlk"]
+
+[ext_resource type="Texture2D" uid="uid://871cwv07khln" path="res://objects/ui/tank_select_button/tank_select_button_highlight.png" id="1_eh6l4"]
+[ext_resource type="Texture2D" uid="uid://deitmhf3hhsoe" path="res://objects/ui/tank_select_button/tank_select_button.png" id="2_w81nt"]
+[ext_resource type="Script" uid="uid://134i0llf26v" path="res://objects/ui/tank_select_button/tank_select_button.gd" id="3_p85vs"]
+[ext_resource type="ArrayMesh" uid="uid://yw5glro4u1p8" path="res://assets/models/tank.obj" id="3_xexc2"]
+[ext_resource type="Texture2D" uid="uid://dpj70m4mkl060" path="res://assets/texture/game/tanks/tank_blue.png" id="4_p85vs"]
+[ext_resource type="Texture2D" uid="uid://dtx8nfwtll6j" path="res://assets/texture/game/tanks/tank_red.png" id="4_xexc2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xexc2"]
+texture = ExtResource("1_eh6l4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p85vs"]
+texture = ExtResource("1_eh6l4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6fcx8"]
+texture = ExtResource("2_w81nt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p2ms8"]
+texture = ExtResource("2_w81nt")
+
+[sub_resource type="Theme" id="Theme_etco6"]
+Button/styles/focus = SubResource("StyleBoxTexture_xexc2")
+Button/styles/hover = SubResource("StyleBoxTexture_p85vs")
+Button/styles/normal = SubResource("StyleBoxTexture_6fcx8")
+Button/styles/pressed = SubResource("StyleBoxTexture_p2ms8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p2ms8"]
+shading_mode = 0
+albedo_texture = ExtResource("4_p85vs")
+texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6fcx8"]
+shading_mode = 0
+albedo_texture = ExtResource("4_xexc2")
+texture_filter = 0
+
+[node name="TankSelectButton" type="Button" unique_id=322242065]
+offset_right = 192.0
+offset_bottom = 192.0
+theme = SubResource("Theme_etco6")
+script = ExtResource("3_p85vs")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1734349755]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1293895565]
+transparent_bg = true
+handle_input_locally = false
+canvas_cull_mask = 4294967294
+size = Vector2i(152, 152)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1809689993]
+transform = Transform3D(1, 0, 0, 0, 0.99382424, 0.11096593, 0, -0.11096593, 0.99382424, -0.0061113834, 0.80791485, 1.9411781)
+cull_mask = 2
+projection = 1
+size = 1.2
+
+[node name="TankModel" type="MeshInstance3D" parent="." unique_id=147540493]
+transform = Transform3D(0.60146654, 0, -0.79889804, 0, 1, 0, 0.79889804, 0, 0.60146654, -0.24742222, 0, 0)
+layers = 2
+material_override = SubResource("StandardMaterial3D_p2ms8")
+mesh = ExtResource("3_xexc2")
+surface_material_override/0 = SubResource("StandardMaterial3D_6fcx8")

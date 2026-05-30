@@ -1,0 +1,25 @@
+[gd_resource type="Theme" format=3 uid="uid://csjldne0rmcve"]
+
+[ext_resource type="Texture2D" uid="uid://i7evmthhcf23" path="res://objects/ui/lobbies_title_button/lobbies_title_button_highlight.png" id="1_m64gk"]
+[ext_resource type="Texture2D" uid="uid://d0g81tcat4857" path="res://objects/ui/lobbies_title_button/lobbies_title_button.png" id="2_txon0"]
+[ext_resource type="FontFile" uid="uid://bnjpqo1btv4mp" path="res://assets/fonts/small_heading.png" id="3_m64gk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sotyh"]
+texture = ExtResource("1_m64gk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5sbbl"]
+texture = ExtResource("1_m64gk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iert2"]
+texture = ExtResource("2_txon0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ewrg5"]
+texture = ExtResource("2_txon0")
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxTexture_sotyh")
+Button/styles/hover = SubResource("StyleBoxTexture_5sbbl")
+Button/styles/normal = SubResource("StyleBoxTexture_iert2")
+Button/styles/pressed = SubResource("StyleBoxTexture_ewrg5")
+Label/font_sizes/font_size = 48
+Label/fonts/font = ExtResource("3_m64gk")

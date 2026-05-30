@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dih2ymkmj0u1q"]
+
+[ext_resource type="Theme" uid="uid://csjldne0rmcve" path="res://objects/ui/lobbies_title_button/lobby_title_button.tres" id="1_66fci"]
+[ext_resource type="Script" uid="uid://cjhlmxr2af84d" path="res://objects/ui/lobbies_title_button/lobby_title_button.gd" id="2_b4lt2"]
+
+[node name="LobbyTitleButton" type="Button" unique_id=883898855]
+offset_right = 1008.0
+offset_bottom = 112.0
+theme = ExtResource("1_66fci")
+script = ExtResource("2_b4lt2")
+
+[node name="Label" type="Label" parent="." unique_id=838851462]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 748.0
+offset_bottom = 112.0
+theme = ExtResource("1_66fci")
+text = "Button"
+vertical_alignment = 1
