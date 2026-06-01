@@ -2,42 +2,48 @@
 
 [ext_resource type="Script" uid="uid://cyaif0qqhm0pb" path="res://scenes/main_menu.gd" id="1_5dd4i"]
 [ext_resource type="Shader" uid="uid://cn8c2ltd7cyho" path="res://scroll.gdshader" id="1_8ln24"]
-[ext_resource type="Texture2D" uid="uid://b50dhjj712w0l" path="res://assets/texture/ui/logo.png" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://whip606sxntx" path="res://assets/texture/ui/decals.png" id="1_wu84c"]
-[ext_resource type="Texture2D" uid="uid://fq25xxp3b8kv" path="res://assets/texture/game/tanks/tank_green.png" id="2_oa1go"]
-[ext_resource type="Script" uid="uid://bfnkiuoepcft4" path="res://scripts/ui/ui_animateable_control.gd" id="6_8egab"]
+[ext_resource type="Texture2D" uid="uid://b50dhjj712w0l" path="res://assets/textures/ui/title_screen/title_logo.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://whip606sxntx" path="res://assets/textures/ui/background/background_decals.png" id="1_wu84c"]
+[ext_resource type="Texture2D" uid="uid://fq25xxp3b8kv" path="res://assets/textures/game/tanks/tank_green.png" id="2_oa1go"]
+[ext_resource type="Script" uid="uid://bfnkiuoepcft4" path="res://scripts/ui/animateable_control.gd" id="6_8egab"]
+[ext_resource type="Script" uid="uid://bvq5g6y8i1xyv" path="res://scripts/ui/screens/title_screen.gd" id="6_eku7s"]
 [ext_resource type="ArrayMesh" uid="uid://yw5glro4u1p8" path="res://assets/models/tank.obj" id="6_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://bynn0fybeuf7w" path="res://assets/texture/ui/credit_text.png" id="6_tbmy8"]
+[ext_resource type="PackedScene" uid="uid://2e2p0r4ukp57" path="res://objects/ui/animation_controller/animation_controller.tscn" id="6_tcusk"]
 [ext_resource type="PackedScene" uid="uid://dshjabp7f6shl" path="res://objects/ui/side_button/side_button.tscn" id="7_oa1go"]
-[ext_resource type="Texture2D" uid="uid://xuakbotdsa1m" path="res://assets/texture/ui/play_icon.png" id="8_jk1qb"]
-[ext_resource type="Texture2D" uid="uid://c0f0cxr5qcvro" path="res://assets/texture/ui/options_icon.png" id="9_5dd4i"]
-[ext_resource type="Texture2D" uid="uid://d0e241wpdyymx" path="res://assets/texture/ui/username_header.png" id="11_flqon"]
+[ext_resource type="Script" uid="uid://dggrfirrosqes" path="res://scripts/ui/screens/username_screen.gd" id="11_c6nra"]
+[ext_resource type="Texture2D" uid="uid://d0e241wpdyymx" path="res://assets/textures/ui/username_screen/username_header.png" id="11_flqon"]
 [ext_resource type="PackedScene" uid="uid://c6a4r0dicjnd3" path="res://objects/ui/small_button/small_button.tscn" id="12_1ajci"]
-[ext_resource type="Texture2D" uid="uid://vxm5higwsbot" path="res://assets/texture/ui/back_button.png" id="12_rcqid"]
-[ext_resource type="Texture2D" uid="uid://cabhigbomkyee" path="res://assets/texture/ui/username_field.png" id="13_1ajci"]
+[ext_resource type="Texture2D" uid="uid://vxm5higwsbot" path="res://assets/textures/ui/back_button_screen/back_button.png" id="12_rcqid"]
+[ext_resource type="Texture2D" uid="uid://cabhigbomkyee" path="res://assets/textures/ui/username_screen/username_field.png" id="13_1ajci"]
 [ext_resource type="FontFile" uid="uid://o60y7h6cusrs" path="res://assets/fonts/header_font.png" id="14_7b55j"]
-[ext_resource type="Texture2D" uid="uid://cm3igkiwvdwvf" path="res://assets/texture/ui/select_fullscreen_header.png" id="17_6vcge"]
-[ext_resource type="Texture2D" uid="uid://bqo2gedjvlfjd" path="res://assets/texture/ui/lobbies_header.png" id="17_hstxw"]
-[ext_resource type="Script" uid="uid://cgycffsfrn3wh" path="res://scripts/ui/ui_animation_controller.gd" id="18_8egab"]
+[ext_resource type="Texture2D" uid="uid://dwoujp4l83bmc" path="res://assets/textures/ui/fullscreen_screen/fullscreen_header.png" id="14_ip0br"]
+[ext_resource type="Texture2D" uid="uid://fv1sx0dpasf" path="res://assets/textures/ui/fullscreen_screen/fullscreen_fullscreen_button.png" id="15_6h3lr"]
+[ext_resource type="Texture2D" uid="uid://cxkkst0y03oed" path="res://assets/textures/ui/browser_screen/browser_header.png" id="15_engjn"]
+[ext_resource type="Texture2D" uid="uid://ds8mu5ws3b4ny" path="res://assets/textures/ui/fullscreen_screen/fullscreen_windowed_button_highlight.png" id="15_xyero"]
+[ext_resource type="Texture2D" uid="uid://t4arrrq8jv46" path="res://assets/textures/ui/browser_screen/browser_background.png" id="16_6h3lr"]
+[ext_resource type="Script" uid="uid://cmpr1b0f5ubn8" path="res://scripts/ui/screens/fullscreen_screen.gd" id="16_qw82i"]
+[ext_resource type="Texture2D" uid="uid://c6ib16wysvibx" path="res://assets/textures/ui/fullscreen_screen/fullscreen_windowed_button.png" id="16_tcusk"]
+[ext_resource type="Script" uid="uid://cgycffsfrn3wh" path="res://objects/ui/animation_controller/animation_controller.gd" id="18_8egab"]
 [ext_resource type="Script" uid="uid://dfjgsqf5s0i58" path="res://scenes/back_button.gd" id="18_a8gd2"]
-[ext_resource type="Texture2D" uid="uid://cr233ydda5ux3" path="res://assets/texture/ui/lobbies_background.png" id="18_gw5y6"]
-[ext_resource type="Texture2D" uid="uid://ddy7cfbquw74t" path="res://assets/texture/ui/windowed_button.png" id="18_ip0br"]
-[ext_resource type="Texture2D" uid="uid://duuqnravm7568" path="res://assets/texture/ui/windowed_button_highlight.png" id="18_xyero"]
+[ext_resource type="Texture2D" uid="uid://c64hjy41xwdnn" path="res://assets/textures/ui/browser_screen/browser_up_button_highlight.png" id="18_dj67d"]
+[ext_resource type="Texture2D" uid="uid://bny3ik1k86y5k" path="res://assets/textures/ui/browser_screen/browser_up_button.png" id="19_6vcge"]
 [ext_resource type="PackedScene" uid="uid://dih2ymkmj0u1q" path="res://objects/ui/lobbies_title_button/lobby_title_button.tscn" id="19_gw5y6"]
-[ext_resource type="Texture2D" uid="uid://dm800la480kdo" path="res://assets/texture/ui/fullscreen_button.png" id="19_xyero"]
-[ext_resource type="Texture2D" uid="uid://dq3sdu7h6ssm2" path="res://assets/texture/ui/lobbies_up_button_highlight.png" id="20_3wgol"]
-[ext_resource type="Texture2D" uid="uid://chaafyovsg3ik" path="res://assets/texture/ui/fullscreen_button_highlight.png" id="20_tcusk"]
-[ext_resource type="Texture2D" uid="uid://dyhil0oyw1w3l" path="res://assets/texture/ui/lobbies_up_button.png" id="21_1acrt"]
-[ext_resource type="Texture2D" uid="uid://dkwqxxsw1fiyt" path="res://assets/texture/ui/lobbies_down_button_highlight.png" id="22_vr8o3"]
-[ext_resource type="Texture2D" uid="uid://dr3coywqpt6d7" path="res://assets/texture/ui/lobbies_down_button.png" id="23_1a85y"]
-[ext_resource type="Texture2D" uid="uid://q0bx060dsiwb" path="res://assets/texture/ui/lobbies_create_button_highlight.png" id="24_vr8o3"]
-[ext_resource type="Texture2D" uid="uid://xaduiu2cjbmr" path="res://assets/texture/ui/lobbies_create_button.png" id="25_1a85y"]
-[ext_resource type="Texture2D" uid="uid://k0yy4wnolwxm" path="res://assets/texture/ui/lobby_players_background.png" id="26_engjn"]
-[ext_resource type="Texture2D" uid="uid://dk7my2oylojak" path="res://assets/texture/ui/lobby_info_background.png" id="27_6h3lr"]
+[ext_resource type="Texture2D" uid="uid://dxdx2ndj2b1ck" path="res://assets/textures/ui/browser_screen/browser_down_button_highlight.png" id="20_ip0br"]
+[ext_resource type="Texture2D" uid="uid://chaafyovsg3ik" path="res://assets/textures/ui/fullscreen_screen/fullscreen_fullscreen_button_highlight.png" id="20_tcusk"]
+[ext_resource type="Texture2D" uid="uid://bs6j7qixay56" path="res://assets/textures/ui/browser_screen/browser_down_button.png" id="21_xyero"]
+[ext_resource type="Script" uid="uid://ddnjn6guwbwer" path="res://scripts/ui/screens/browser_screen.gd" id="22_1468l"]
+[ext_resource type="Texture2D" uid="uid://er6ln2m6xe5w" path="res://assets/textures/ui/browser_screen/browser_create_button_highlight.png" id="22_tcusk"]
+[ext_resource type="Texture2D" uid="uid://d1sdnby6kmqwf" path="res://assets/textures/ui/browser_screen/browser_create_button.png" id="23_4puye"]
+[ext_resource type="Texture2D" uid="uid://k0yy4wnolwxm" path="res://assets/textures/ui/lobby_screen/lobby_players_background.png" id="26_engjn"]
+[ext_resource type="Texture2D" uid="uid://dk7my2oylojak" path="res://assets/textures/ui/lobby_screen/lobby_info_background.png" id="27_6h3lr"]
+[ext_resource type="Texture2D" uid="uid://nrj2o87fjco5" path="res://assets/textures/ui/tank_screen/tank_header.png" id="31_xyero"]
+[ext_resource type="Script" uid="uid://7rgy03t38dn1" path="res://scripts/ui/screens/lobby_screen.gd" id="32_01xyg"]
 [ext_resource type="PackedScene" uid="uid://dbyjqu42qtrlk" path="res://objects/ui/tank_select_button/tank_select_button.tscn" id="33_tcusk"]
-[ext_resource type="Texture2D" uid="uid://csof802yqriwg" path="res://assets/texture/ui/tank_select_header.png" id="34_4puye"]
-[ext_resource type="Texture2D" uid="uid://dpj70m4mkl060" path="res://assets/texture/game/tanks/tank_blue.png" id="35_4puye"]
+[ext_resource type="Texture2D" uid="uid://dpj70m4mkl060" path="res://assets/textures/game/tanks/tank_blue.png" id="35_4puye"]
+[ext_resource type="Script" uid="uid://cjqmv60bfbdh" path="res://scripts/ui/screens/tank_screen.gd" id="35_764ux"]
 [ext_resource type="Script" uid="uid://dol0py10j17yw" path="res://scripts/passives/spin.gd" id="36_q13xq"]
+[ext_resource type="Script" uid="uid://cdf2j1i8js604" path="res://scripts/ui/screens/map_screen.gd" id="40_c6nra"]
+[ext_resource type="Texture2D" uid="uid://cl4btfit05qkm" path="res://assets/textures/ui/map_screen/map_header.png" id="41_qw82i"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jk1qb"]
 shading_mode = 0
@@ -65,16 +71,16 @@ LineEdit/styles/focus = SubResource("StyleBoxEmpty_8egab")
 LineEdit/styles/normal = SubResource("StyleBoxEmpty_hstxw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eku7s"]
-texture = ExtResource("18_xyero")
+texture = ExtResource("15_xyero")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c6nra"]
-texture = ExtResource("18_xyero")
+texture = ExtResource("15_xyero")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yxnar"]
-texture = ExtResource("18_ip0br")
+texture = ExtResource("16_tcusk")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1468l"]
-texture = ExtResource("18_ip0br")
+texture = ExtResource("16_tcusk")
 
 [sub_resource type="Theme" id="Theme_eku7s"]
 Button/styles/focus = SubResource("StyleBoxTexture_eku7s")
@@ -93,10 +99,10 @@ texture = ExtResource("20_tcusk")
 texture = ExtResource("20_tcusk")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qw82i"]
-texture = ExtResource("19_xyero")
+texture = ExtResource("15_6h3lr")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wadof"]
-texture = ExtResource("19_xyero")
+texture = ExtResource("15_6h3lr")
 
 [sub_resource type="Theme" id="Theme_1468l"]
 Button/styles/focus = SubResource("StyleBoxTexture_01xyg")
@@ -109,16 +115,16 @@ Label/font_sizes/font_size = 80
 Label/fonts/font = ExtResource("14_7b55j")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hl5e0"]
-texture = ExtResource("20_3wgol")
+texture = ExtResource("18_dj67d")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_engjn"]
-texture = ExtResource("20_3wgol")
+texture = ExtResource("18_dj67d")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6h3lr"]
-texture = ExtResource("21_1acrt")
+texture = ExtResource("19_6vcge")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dj67d"]
-texture = ExtResource("21_1acrt")
+texture = ExtResource("19_6vcge")
 
 [sub_resource type="Theme" id="Theme_6vcge"]
 Button/styles/focus = SubResource("StyleBoxTexture_hl5e0")
@@ -127,16 +133,16 @@ Button/styles/normal = SubResource("StyleBoxTexture_6h3lr")
 Button/styles/pressed = SubResource("StyleBoxTexture_dj67d")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ip0br"]
-texture = ExtResource("22_vr8o3")
+texture = ExtResource("20_ip0br")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xyero"]
-texture = ExtResource("22_vr8o3")
+texture = ExtResource("20_ip0br")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tcusk"]
-texture = ExtResource("23_1a85y")
+texture = ExtResource("21_xyero")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4puye"]
-texture = ExtResource("23_1a85y")
+texture = ExtResource("21_xyero")
 
 [sub_resource type="Theme" id="Theme_q13xq"]
 Button/styles/focus = SubResource("StyleBoxTexture_ip0br")
@@ -145,16 +151,16 @@ Button/styles/normal = SubResource("StyleBoxTexture_tcusk")
 Button/styles/pressed = SubResource("StyleBoxTexture_4puye")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6vcge"]
-texture = ExtResource("24_vr8o3")
+texture = ExtResource("22_tcusk")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q13xq"]
-texture = ExtResource("24_vr8o3")
+texture = ExtResource("22_tcusk")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u43bj"]
-texture = ExtResource("25_1a85y")
+texture = ExtResource("23_4puye")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jvjdd"]
-texture = ExtResource("25_1a85y")
+texture = ExtResource("23_4puye")
 
 [sub_resource type="Theme" id="Theme_yxnar"]
 Button/styles/focus = SubResource("StyleBoxTexture_6vcge")
@@ -166,8 +172,14 @@ Button/styles/pressed = SubResource("StyleBoxTexture_jvjdd")
 Label/font_sizes/font_size = 80
 Label/fonts/font = ExtResource("14_7b55j")
 
+[sub_resource type="Environment" id="Environment_eku7s"]
+background_mode = 1
+background_color = Color(0.3962244, 0.63005924, 0.9361218, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q13xq"]
-shading_mode = 0
 albedo_texture = ExtResource("35_4puye")
 texture_filter = 0
 
@@ -236,9 +248,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("18_8egab")
+script = ExtResource("6_eku7s")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="TitleScreen" unique_id=201039348]
+[node name="AnimationController" parent="TitleScreen" unique_id=554111336 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="TitleSubViewportContainer" type="SubViewportContainer" parent="TitleScreen" unique_id=201039348]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -250,17 +265,17 @@ offset_bottom = -86.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(212, 184)
 out_pos = Vector2(-856, 184)
 
-[node name="SubViewport" type="SubViewport" parent="TitleScreen/SubViewportContainer" unique_id=1728075083]
+[node name="SubViewport" type="SubViewport" parent="TitleScreen/TitleSubViewportContainer" unique_id=1728075083]
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(800, 600)
 render_target_update_mode = 0
 
-[node name="Camera3D" type="Camera3D" parent="TitleScreen/SubViewportContainer/SubViewport" unique_id=1364448212]
+[node name="Camera3D" type="Camera3D" parent="TitleScreen/TitleSubViewportContainer/SubViewport" unique_id=1364448212]
 transform = Transform3D(1, 0, 0, 0, 0.9517498, 0.30687493, 0, -0.30687493, 0.9517498, 0.0072062016, 1.0888562, 2.4992175)
 cull_mask = 1
 environment = SubResource("Environment_tbmy8")
@@ -269,7 +284,7 @@ fov = 37.8
 size = 2.87
 near = 0.042
 
-[node name="Logo" type="TextureRect" parent="TitleScreen" unique_id=470485845]
+[node name="TitleLogo" type="TextureRect" parent="TitleScreen" unique_id=470485845]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 2
@@ -282,24 +297,23 @@ offset_bottom = -228.0
 grow_vertical = 0
 texture = ExtResource("1_ekxnf")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(176, 532)
 out_pos = Vector2(-836, 532)
 
-[node name="CreditText" type="TextureRect" parent="TitleScreen" unique_id=1624042086]
+[node name="TitleCreditText" type="TextureRect" parent="TitleScreen" unique_id=1624042086]
 texture_filter = 1
 layout_mode = 0
 offset_left = 1288.0
 offset_top = 1000.0
 offset_right = 1848.0029
 offset_bottom = 1040.0
-texture = ExtResource("6_tbmy8")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1288, 1000)
 out_pos = Vector2(2056, 1000)
 
-[node name="PlayButtonContainer" type="Control" parent="TitleScreen" unique_id=286396526]
+[node name="TitlePlayButtonContainer" type="Control" parent="TitleScreen" unique_id=286396526]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -313,27 +327,24 @@ offset_bottom = -28.0
 grow_horizontal = 0
 grow_vertical = 2
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1216, 384)
 out_pos = Vector2(1984, 384)
 highlight_pos = Vector2(1152, 384)
 
-[node name="PlayButton" parent="TitleScreen/PlayButtonContainer" unique_id=1346856500 instance=ExtResource("7_oa1go")]
+[node name="TitlePlayButton" parent="TitleScreen/TitlePlayButtonContainer" unique_id=1346856500 instance=ExtResource("7_oa1go")]
 layout_mode = 1
 anchors_preset = 15
-anchor_left = 0.0
-anchor_top = 0.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 0.0
-offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 2
+grow_vertical = 2
 set_text = "PLAY"
-set_icon = ExtResource("8_jk1qb")
 metadata/_edit_lock_ = true
 
-[node name="OptionsButtonContainer" type="Control" parent="TitleScreen" unique_id=1821537032]
+[node name="TitleOptionsButtonContainer" type="Control" parent="TitleScreen" unique_id=1821537032]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -347,24 +358,21 @@ offset_bottom = 164.0
 grow_horizontal = 0
 grow_vertical = 2
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1216, 576)
 out_pos = Vector2(1984, 576)
 highlight_pos = Vector2(1152, 576)
 
-[node name="OptionsButton" parent="TitleScreen/OptionsButtonContainer" unique_id=1076672624 instance=ExtResource("7_oa1go")]
+[node name="TitleOptionsButton" parent="TitleScreen/TitleOptionsButtonContainer" unique_id=1076672624 instance=ExtResource("7_oa1go")]
 layout_mode = 1
 anchors_preset = 15
-anchor_left = 0.0
-anchor_top = 0.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 0.0
-offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 2
+grow_vertical = 2
 set_text = "OPTIONS"
-set_icon = ExtResource("9_5dd4i")
 metadata/_edit_lock_ = true
 
 [node name="UsernameScreen" type="Control" parent="." unique_id=1744418533]
@@ -376,15 +384,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("18_8egab")
+script = ExtResource("11_c6nra")
 
-[node name="Header" type="TextureRect" parent="UsernameScreen" unique_id=338840046]
+[node name="AnimationController" parent="UsernameScreen" unique_id=1407514450 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="UsernameHeader" type="TextureRect" parent="UsernameScreen" unique_id=338840046]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 352.0
 texture = ExtResource("11_flqon")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 out_pos = Vector2(0, -416)
 
 [node name="UsernameField" type="TextureRect" parent="UsernameScreen" unique_id=1383273875]
@@ -395,7 +406,7 @@ offset_right = 1664.0
 offset_bottom = 704.0
 texture = ExtResource("13_1ajci")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(256, 448)
 out_pos = Vector2(-1472, 448)
 
@@ -410,7 +421,7 @@ placeholder_text = "USERNAME"
 alignment = 1
 metadata/_edit_lock_ = true
 
-[node name="OkButtonContianer" type="Control" parent="UsernameScreen" unique_id=2083696854]
+[node name="UsernameOkButtonContainer" type="Control" parent="UsernameScreen" unique_id=2083696854]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -424,12 +435,12 @@ offset_bottom = -120.0
 grow_horizontal = 0
 grow_vertical = 0
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1216, 832)
 out_pos = Vector2(-512, 832)
 highlight_pos = Vector2(1216, 800)
 
-[node name="OkButton" parent="UsernameScreen/OkButtonContianer" unique_id=941088435 instance=ExtResource("12_1ajci")]
+[node name="UsernameOkButton" parent="UsernameScreen/UsernameOkButtonContainer" unique_id=941088435 instance=ExtResource("12_1ajci")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -441,7 +452,7 @@ grow_vertical = 2
 set_text = "OK"
 metadata/_edit_lock_ = true
 
-[node name="SelectFullscreenScreen" type="Control" parent="." unique_id=1465699460]
+[node name="FullscreenScreen" type="Control" parent="." unique_id=1465699460]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -450,18 +461,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("18_8egab")
+script = ExtResource("16_qw82i")
 
-[node name="Header" type="TextureRect" parent="SelectFullscreenScreen" unique_id=445421582]
+[node name="AnimationController" parent="FullscreenScreen" unique_id=1008553247 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="FullscreenHeader" type="TextureRect" parent="FullscreenScreen" unique_id=445421582]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 352.0
-texture = ExtResource("17_6vcge")
+texture = ExtResource("14_ip0br")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 out_pos = Vector2(0, -416)
 
-[node name="WindowedButton" type="Button" parent="SelectFullscreenScreen" unique_id=69498283]
+[node name="FullscreenWindowedButton" type="Button" parent="FullscreenScreen" unique_id=69498283]
 layout_mode = 0
 offset_left = 384.0
 offset_top = 416.0
@@ -469,11 +483,12 @@ offset_right = 704.0
 offset_bottom = 736.0
 theme = SubResource("Theme_eku7s")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(384, 416)
 out_pos = Vector2(-576, 416)
+highlight_pos = Vector2(384, 352)
 
-[node name="WindowedLabel" type="Label" parent="SelectFullscreenScreen/WindowedButton" unique_id=1800246731]
+[node name="WindowedLabel" type="Label" parent="FullscreenScreen/FullscreenWindowedButton" unique_id=1800246731]
 layout_mode = 0
 offset_left = -132.0
 offset_top = 352.0
@@ -482,7 +497,7 @@ offset_bottom = 432.0
 theme = SubResource("Theme_c6nra")
 text = "WINDOWED"
 
-[node name="FullscreenButton" type="Button" parent="SelectFullscreenScreen" unique_id=709291191]
+[node name="FullscreenFullscreenButton" type="Button" parent="FullscreenScreen" unique_id=709291191]
 layout_mode = 0
 offset_left = 1152.0
 offset_top = 416.0
@@ -490,20 +505,21 @@ offset_right = 1472.0
 offset_bottom = 736.0
 theme = SubResource("Theme_1468l")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1152, 416)
 out_pos = Vector2(2176, 416)
+highlight_pos = Vector2(1152, 352)
 
-[node name="FullscreenLabel" type="Label" parent="SelectFullscreenScreen/FullscreenButton" unique_id=1622672549]
+[node name="FullscreenLabel" type="Label" parent="FullscreenScreen/FullscreenFullscreenButton" unique_id=1622672549]
 layout_mode = 0
-offset_left = -232.0
+offset_left = -208.0
 offset_top = 352.0
-offset_right = 488.0
+offset_right = 512.0
 offset_bottom = 432.0
 theme = SubResource("Theme_01xyg")
 text = "Fullscreen"
 
-[node name="LobbiesScreen" type="Control" parent="." unique_id=575578618]
+[node name="BrowserScreen" type="Control" parent="." unique_id=575578618]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -512,37 +528,40 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("18_8egab")
+script = ExtResource("22_1468l")
 
-[node name="Header" type="TextureRect" parent="LobbiesScreen" unique_id=1496242451]
+[node name="AnimationController" parent="BrowserScreen" unique_id=297074967 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="BrowserHeader" type="TextureRect" parent="BrowserScreen" unique_id=1496242451]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 352.0
-texture = ExtResource("17_hstxw")
+texture = ExtResource("15_engjn")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 out_pos = Vector2(0, -416)
 
-[node name="Background" type="TextureRect" parent="LobbiesScreen" unique_id=308044652]
+[node name="BrowserPanel" type="TextureRect" parent="BrowserScreen" unique_id=308044652]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 352.0
 offset_right = 1856.0
 offset_bottom = 992.0
-texture = ExtResource("18_gw5y6")
+texture = ExtResource("16_6h3lr")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(64, 352)
 out_pos = Vector2(64, 1152)
 
-[node name="LobbyTitleButton1Container" type="Control" parent="LobbiesScreen/Background" unique_id=119214426]
+[node name="BrowserLobbyTitleButton1Container" type="Control" parent="BrowserScreen/BrowserPanel" unique_id=119214426]
 anchors_preset = 0
 offset_left = 264.0
 offset_top = 40.0
 offset_right = 1272.0
 offset_bottom = 152.0
 
-[node name="LobbyTitleButton1" parent="LobbiesScreen/Background/LobbyTitleButton1Container" unique_id=1976564998 instance=ExtResource("19_gw5y6")]
+[node name="BrowserLobbyTitleButton1" parent="BrowserScreen/BrowserPanel/BrowserLobbyTitleButton1Container" unique_id=1976564998 instance=ExtResource("19_gw5y6")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -554,14 +573,14 @@ grow_vertical = 2
 set_text = "VITA"
 metadata/_edit_lock_ = true
 
-[node name="LobbyTitleButton2Container" type="Control" parent="LobbiesScreen/Background" unique_id=1137264462]
+[node name="BrowserLobbyTitleButton2Container" type="Control" parent="BrowserScreen/BrowserPanel" unique_id=1137264462]
 anchors_preset = 0
 offset_left = 264.0
 offset_top = 168.0
 offset_right = 1272.0
 offset_bottom = 280.0
 
-[node name="LobbyTitleButton2" parent="LobbiesScreen/Background/LobbyTitleButton2Container" unique_id=1294996827 instance=ExtResource("19_gw5y6")]
+[node name="BrowserLobbyTitleButton2" parent="BrowserScreen/BrowserPanel/BrowserLobbyTitleButton2Container" unique_id=1294996827 instance=ExtResource("19_gw5y6")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -573,14 +592,14 @@ grow_vertical = 2
 set_text = "LAUER"
 metadata/_edit_lock_ = true
 
-[node name="LobbyTitleButton3Container" type="Control" parent="LobbiesScreen/Background" unique_id=371980560]
+[node name="BrowserLobbyTitleButton3Container" type="Control" parent="BrowserScreen/BrowserPanel" unique_id=371980560]
 anchors_preset = 0
 offset_left = 264.0
 offset_top = 296.0
 offset_right = 1272.0
 offset_bottom = 408.0
 
-[node name="LobbyTitleButton3" parent="LobbiesScreen/Background/LobbyTitleButton3Container" unique_id=883898855 instance=ExtResource("19_gw5y6")]
+[node name="BrowserLobbyTitleButton3" parent="BrowserScreen/BrowserPanel/BrowserLobbyTitleButton3Container" unique_id=883898855 instance=ExtResource("19_gw5y6")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -592,7 +611,7 @@ grow_vertical = 2
 set_text = "Halfdan"
 metadata/_edit_lock_ = true
 
-[node name="UpButton" type="Button" parent="LobbiesScreen/Background" unique_id=762937247]
+[node name="BrowserUpButton" type="Button" parent="BrowserScreen/BrowserPanel" unique_id=762937247]
 layout_mode = 0
 offset_left = 40.0
 offset_top = 40.0
@@ -600,7 +619,7 @@ offset_right = 216.0
 offset_bottom = 216.0
 theme = SubResource("Theme_6vcge")
 
-[node name="DownButton" type="Button" parent="LobbiesScreen/Background" unique_id=1213249154]
+[node name="BrowserDownButton" type="Button" parent="BrowserScreen/BrowserPanel" unique_id=1213249154]
 layout_mode = 0
 offset_left = 40.0
 offset_top = 232.0
@@ -608,7 +627,7 @@ offset_right = 216.0
 offset_bottom = 408.0
 theme = SubResource("Theme_q13xq")
 
-[node name="CreateLobbyButton" type="Button" parent="LobbiesScreen/Background" unique_id=1377482242]
+[node name="BrowserCreateLobbyButton" type="Button" parent="BrowserScreen/BrowserPanel" unique_id=1377482242]
 layout_mode = 0
 offset_left = 864.0
 offset_top = 480.0
@@ -616,7 +635,7 @@ offset_right = 1760.0
 offset_bottom = 608.0
 theme = SubResource("Theme_yxnar")
 
-[node name="Label" type="Label" parent="LobbiesScreen/Background/CreateLobbyButton" unique_id=362359810]
+[node name="Label" type="Label" parent="BrowserScreen/BrowserPanel/BrowserCreateLobbyButton" unique_id=362359810]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -639,20 +658,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("18_8egab")
+script = ExtResource("32_01xyg")
 
-[node name="PlayerBackground" type="TextureRect" parent="LobbyScreen" unique_id=131046550]
+[node name="AnimationController" parent="LobbyScreen" unique_id=271370783 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="LobbyPlayerBackground" type="TextureRect" parent="LobbyScreen" unique_id=131046550]
 layout_mode = 0
 offset_left = 64.0
 offset_right = 928.0
 offset_bottom = 832.0
 texture = ExtResource("26_engjn")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(64, 0)
 out_pos = Vector2(64, -896)
 
-[node name="InfoBackground" type="TextureRect" parent="LobbyScreen" unique_id=501171914]
+[node name="LobbyInfoBackground" type="TextureRect" parent="LobbyScreen" unique_id=501171914]
 layout_mode = 0
 offset_left = 992.0
 offset_top = 64.0
@@ -660,22 +682,23 @@ offset_right = 1920.0
 offset_bottom = 832.0
 texture = ExtResource("27_6h3lr")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(992, 64)
 out_pos = Vector2(1984, 64)
 
-[node name="StartButtonContainer" type="Control" parent="LobbyScreen" unique_id=1569948519]
+[node name="LobbyStartButtonContainer" type="Control" parent="LobbyScreen" unique_id=1569948519]
 anchors_preset = 0
 offset_left = 1408.0
 offset_top = 896.0
 offset_right = 1856.0
 offset_bottom = 1024.0
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1408, 896)
 out_pos = Vector2(1408, 1216)
+highlight_pos = Vector2(1408, 864)
 
-[node name="StartButton" parent="LobbyScreen/StartButtonContainer" unique_id=580501299 instance=ExtResource("12_1ajci")]
+[node name="LobbyStartButton" parent="LobbyScreen/LobbyStartButtonContainer" unique_id=580501299 instance=ExtResource("12_1ajci")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -687,7 +710,7 @@ grow_vertical = 2
 set_text = "START"
 metadata/_edit_lock_ = true
 
-[node name="TankSelectScreen" type="Control" parent="." unique_id=417445075]
+[node name="TankScreen" type="Control" parent="." unique_id=417445075]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -695,9 +718,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("18_8egab")
+script = ExtResource("35_764ux")
 
-[node name="TankButtonsContainer" type="Control" parent="TankSelectScreen" unique_id=1710427652]
+[node name="AnimationController" parent="TankScreen" unique_id=1871006108 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="TankButtonsContainer" type="Control" parent="TankScreen" unique_id=1710427652]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -710,29 +736,29 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(64, 64)
 out_pos = Vector2(-448, 64)
 
-[node name="TankSelectButton" parent="TankSelectScreen/TankButtonsContainer" unique_id=322242065 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton" parent="TankScreen/TankButtonsContainer" unique_id=322242065 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton2" parent="TankSelectScreen/TankButtonsContainer" unique_id=402927336 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton2" parent="TankScreen/TankButtonsContainer" unique_id=402927336 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 offset_left = 192.0
 offset_right = 384.0
 skin = 1
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton3" parent="TankSelectScreen/TankButtonsContainer" unique_id=1996430818 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton3" parent="TankScreen/TankButtonsContainer" unique_id=1996430818 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 offset_top = 192.0
 offset_bottom = 384.0
 skin = 2
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton4" parent="TankSelectScreen/TankButtonsContainer" unique_id=746899116 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton4" parent="TankScreen/TankButtonsContainer" unique_id=746899116 instance=ExtResource("33_tcusk")]
 layout_mode = 0
 offset_left = 192.0
 offset_top = 192.0
@@ -741,14 +767,14 @@ offset_bottom = 384.0
 skin = 3
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton5" parent="TankSelectScreen/TankButtonsContainer" unique_id=610155409 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton5" parent="TankScreen/TankButtonsContainer" unique_id=610155409 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 offset_top = 384.0
 offset_bottom = 576.0
 skin = 4
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton6" parent="TankSelectScreen/TankButtonsContainer" unique_id=344550114 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton6" parent="TankScreen/TankButtonsContainer" unique_id=344550114 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 offset_left = 192.0
 offset_top = 384.0
@@ -757,14 +783,14 @@ offset_bottom = 576.0
 skin = 5
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton7" parent="TankSelectScreen/TankButtonsContainer" unique_id=1119760762 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton7" parent="TankScreen/TankButtonsContainer" unique_id=1119760762 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 offset_top = 576.0
 offset_bottom = 768.0
 skin = 6
 metadata/_edit_lock_ = true
 
-[node name="TankSelectButton8" parent="TankSelectScreen/TankButtonsContainer" unique_id=1998243173 instance=ExtResource("33_tcusk")]
+[node name="TankSelectButton8" parent="TankScreen/TankButtonsContainer" unique_id=1998243173 instance=ExtResource("33_tcusk")]
 layout_mode = 1
 offset_left = 192.0
 offset_top = 576.0
@@ -773,60 +799,62 @@ offset_bottom = 768.0
 skin = 7
 metadata/_edit_lock_ = true
 
-[node name="Header" type="TextureRect" parent="TankSelectScreen" unique_id=294971615]
+[node name="TankHeader" type="TextureRect" parent="TankScreen" unique_id=294971615]
 layout_mode = 0
 offset_left = 512.0
 offset_top = 64.0
 offset_right = 1856.0
 offset_bottom = 208.0
-texture = ExtResource("34_4puye")
+texture = ExtResource("31_xyero")
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(512, 64)
 out_pos = Vector2(512, -208)
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="TankSelectScreen" unique_id=860227441]
+[node name="TankSubViewportContainer" type="SubViewportContainer" parent="TankScreen" unique_id=860227441]
 layout_mode = 0
 offset_left = 640.0
 offset_top = 320.0
 offset_right = 1664.0
 offset_bottom = 832.0
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(640, 320)
 out_pos = Vector2(1984, 320)
 
-[node name="SubViewport" type="SubViewport" parent="TankSelectScreen/SubViewportContainer" unique_id=1883011440]
+[node name="SubViewport" type="SubViewport" parent="TankScreen/TankSubViewportContainer" unique_id=1883011440]
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(1024, 512)
 render_target_update_mode = 4
 
-[node name="Camera3D" type="Camera3D" parent="TankSelectScreen/SubViewportContainer/SubViewport" unique_id=360202870]
+[node name="Camera3D" type="Camera3D" parent="TankScreen/TankSubViewportContainer/SubViewport" unique_id=360202870]
 transform = Transform3D(1, 0, 0, 0, 0.9643545, 0.26461372, 0, -0.26461372, 0.9643545, 0, 0.9920645, 2.0255837)
-cull_mask = 1048064
+cull_mask = 512
+environment = SubResource("Environment_eku7s")
 projection = 1
 size = 1.8
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="TankSelectScreen" unique_id=415167043]
+[node name="TankSelectedTank" type="MeshInstance3D" parent="TankScreen" unique_id=415167043]
 transform = Transform3D(0.53489804, 0, -0.8449166, 0, 1, 0, 0.8449166, 0, 0.53489804, 0, 0, 0)
 layers = 512
 mesh = ExtResource("6_rtw2f")
 surface_material_override/0 = SubResource("StandardMaterial3D_q13xq")
 script = ExtResource("36_q13xq")
 
-[node name="OkButtonContainer" type="Control" parent="TankSelectScreen" unique_id=1586891135]
+[node name="TankOkButtonContainer" type="Control" parent="TankScreen" unique_id=1586891135]
 anchors_preset = 0
 offset_left = 1408.0
 offset_top = 896.0
 offset_right = 1856.0
 offset_bottom = 1024.0
 script = ExtResource("6_8egab")
-parent_path = NodePath("..")
+parent_path = NodePath("../AnimationController")
 in_pos = Vector2(1408, 896)
 out_pos = Vector2(1408, 1216)
+highlight_pos = Vector2(1408, 832)
 
-[node name="SmallButton" parent="TankSelectScreen/OkButtonContainer" unique_id=428704211 instance=ExtResource("12_1ajci")]
+[node name="TankOkButton" parent="TankScreen/TankOkButtonContainer" unique_id=428704211 instance=ExtResource("12_1ajci")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -837,6 +865,37 @@ grow_horizontal = 2
 grow_vertical = 2
 set_text = "OK"
 metadata/_edit_lock_ = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="TankScreen" unique_id=539497345]
+transform = Transform3D(1, 0, 0, 0, 0.9077775, 0.41945207, 0, -0.41945207, 0.9077775, 0, 1.9155885, 1.8543866)
+layers = 512
+light_energy = 0.896
+
+[node name="MapScreen" type="Control" parent="." unique_id=2034924291]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("40_c6nra")
+
+[node name="AnimationController" parent="MapScreen" unique_id=94309669 instance=ExtResource("6_tcusk")]
+layout_mode = 1
+
+[node name="MapHeader" type="TextureRect" parent="MapScreen" unique_id=1364635902]
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 64.0
+offset_right = 1792.0
+offset_bottom = 340.0
+texture = ExtResource("41_qw82i")
+script = ExtResource("6_8egab")
+parent_path = NodePath("../AnimationController")
+in_pos = Vector2(1020, 64)
+out_pos = Vector2(1020, -340)
 
 [node name="BackButtonScreen" type="Control" parent="." unique_id=36118833]
 layout_mode = 1
@@ -876,13 +935,14 @@ theme = SubResource("Theme_hstxw")
 script = ExtResource("18_a8gd2")
 metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="TitleScreen/PlayButtonContainer/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="TitleScreen/OptionsButtonContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="UsernameScreen/OkButtonContianer/OkButton" to="." method="_on_ok_button_pressed"]
-[connection signal="pressed" from="SelectFullscreenScreen/WindowedButton" to="." method="_on_windowed_button_pressed"]
-[connection signal="pressed" from="SelectFullscreenScreen/FullscreenButton" to="." method="_on_fullscreen_button_pressed"]
-[connection signal="pressed" from="LobbiesScreen/Background/CreateLobbyButton" to="." method="_on_create_lobby_button_pressed"]
-[connection signal="pressed" from="LobbyScreen/StartButtonContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="TitleScreen/TitlePlayButtonContainer/TitlePlayButton" to="TitleScreen" method="_on_title_play_button_pressed"]
+[connection signal="pressed" from="TitleScreen/TitleOptionsButtonContainer/TitleOptionsButton" to="TitleScreen" method="_on_title_options_button_pressed"]
+[connection signal="pressed" from="UsernameScreen/UsernameOkButtonContainer/UsernameOkButton" to="UsernameScreen" method="_on_username_ok_button_pressed"]
+[connection signal="pressed" from="FullscreenScreen/FullscreenWindowedButton" to="FullscreenScreen" method="_on_fullscreen_windowed_button_pressed"]
+[connection signal="pressed" from="FullscreenScreen/FullscreenFullscreenButton" to="FullscreenScreen" method="_on_fullscreen_fullscreen_button_pressed"]
+[connection signal="pressed" from="BrowserScreen/BrowserPanel/BrowserCreateLobbyButton" to="BrowserScreen" method="_on_browser_create_lobby_button_pressed"]
+[connection signal="pressed" from="LobbyScreen/LobbyStartButtonContainer/LobbyStartButton" to="LobbyScreen" method="_on_lobby_start_button_pressed"]
+[connection signal="pressed" from="TankScreen/TankOkButtonContainer/TankOkButton" to="TankScreen" method="_on_tank_ok_button_pressed"]
 [connection signal="mouse_entered" from="BackButtonScreen/BackButtonContainer/BackButton" to="BackButtonScreen/BackButtonContainer/BackButton" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="BackButtonScreen/BackButtonContainer/BackButton" to="BackButtonScreen/BackButtonContainer/BackButton" method="_on_mouse_exited"]
 [connection signal="pressed" from="BackButtonScreen/BackButtonContainer/BackButton" to="." method="_on_back_button_pressed"]

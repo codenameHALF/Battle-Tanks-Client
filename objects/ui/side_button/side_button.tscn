@@ -3,18 +3,9 @@
 [ext_resource type="Theme" uid="uid://b84rs6v3co2dd" path="res://objects/ui/side_button/side_button.tres" id="1_ipp7n"]
 [ext_resource type="Script" uid="uid://bd1l3ftw5s4g3" path="res://objects/ui/side_button/side_button.gd" id="2_v5crp"]
 
-[node name="SideButton" type="Button" unique_id=1346856500]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -704.0
-offset_top = -156.0
-offset_right = 64.0
-offset_bottom = -28.0
-grow_horizontal = 0
-grow_vertical = 2
+[node name="Button" type="Button" unique_id=1346856500]
+offset_right = 768.0
+offset_bottom = 128.0
 theme = ExtResource("1_ipp7n")
 script = ExtResource("2_v5crp")
 

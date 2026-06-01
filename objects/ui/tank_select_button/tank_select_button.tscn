@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://deitmhf3hhsoe" path="res://objects/ui/tank_select_button/tank_select_button.png" id="2_w81nt"]
 [ext_resource type="Script" uid="uid://134i0llf26v" path="res://objects/ui/tank_select_button/tank_select_button.gd" id="3_p85vs"]
 [ext_resource type="ArrayMesh" uid="uid://yw5glro4u1p8" path="res://assets/models/tank.obj" id="3_xexc2"]
-[ext_resource type="Texture2D" uid="uid://dpj70m4mkl060" path="res://assets/texture/game/tanks/tank_blue.png" id="4_p85vs"]
-[ext_resource type="Texture2D" uid="uid://dtx8nfwtll6j" path="res://assets/texture/game/tanks/tank_red.png" id="4_xexc2"]
+[ext_resource type="Texture2D" uid="uid://dpj70m4mkl060" path="res://assets/textures/game/tanks/tank_blue.png" id="4_p85vs"]
+[ext_resource type="Texture2D" uid="uid://dtx8nfwtll6j" path="res://assets/textures/game/tanks/tank_red.png" id="4_xexc2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xexc2"]
 texture = ExtResource("1_eh6l4")
@@ -72,3 +72,5 @@ layers = 2
 material_override = SubResource("StandardMaterial3D_p2ms8")
 mesh = ExtResource("3_xexc2")
 surface_material_override/0 = SubResource("StandardMaterial3D_6fcx8")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
